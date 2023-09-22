@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="1080.0" maxWidth="1920.0" minHeight="600.0" minWidth="360.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SHOP.Shop.OrderController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="68.0" prefWidth="960.0" />
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="1920.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="800.0" text="Personal Information">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="68.0" prefWidth="960.0">
+                     <children>
+                        <VBox minWidth="268.0" prefHeight="68.0" prefWidth="268.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="First Name" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="fName" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                        <VBox minWidth="268.0" prefHeight="68.0" prefWidth="268.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Last Name" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="lName" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                        <VBox minWidth="268.0" prefHeight="68.0" prefWidth="268.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text=" " textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxWidth="1920.0" minWidth="538.0" prefHeight="68.0" prefWidth="0.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="804.0">
+                     <children>
+                        <VBox minWidth="268.0" prefHeight="68.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Telephone Nr." textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="phone" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                        <VBox minWidth="268.0" prefHeight="68.0" prefWidth="250.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Mail" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="mail" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="1920.0">
+               <children>
+                  <Label prefWidth="800.0" text="Shipping Information">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="68.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Street" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="street" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="68.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Number" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="adress_number" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="68.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Floor" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="floor" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="63.0" prefWidth="1905.0">
+               <children>
+                  <VBox prefHeight="68.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Zip" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="zip" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="68.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="City" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="city" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="233.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="68.0" prefWidth="268.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="67.0" style="-fx-background-color: #2D728F; -fx-background-radius: 20px;" text="Country" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="3.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="contry" alignment="TOP_LEFT" maxHeight="25.0" maxWidth="250.0" prefHeight="25.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefWidth="960.0">
+               <children>
+                  <Button fx:id="process_order" mnemonicParsing="false" onAction="#showNewScene" prefHeight="25.0" prefWidth="480.0" style="-fx-background-color: #2D728F;" text="Process Order" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <VBox style="-fx-background-color: #2D728F;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="1920.0" style="-fx-background-color: #2D728F;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="1876.0" text="Order Information" textFill="WHITE">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="1920.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/shopping_cart_icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/log-in-icon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

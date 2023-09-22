@@ -1,0 +1,33 @@
+{
+  "cart": {
+    "1": {
+      "amount": 1,
+      "price": 150,
+      "id": "1"
+    },
+    "2": {
+      "amount": 1,
+      "price": 150,
+      "id": "2"
+    },
+    "3": {
+      "amount": 11,
+      "price": 12999,
+      "id": "3"
+    },
+    "4": {
+      "amount": 11,
+      "price": 12999,
+      "id": "4"
+    }
+  },
+  "customer": {
+    "zip": "2000",
+    "country": "Denmark",
+    "address": "jenshansensbondegaard 21",
+    "mail": "glenjohannes2604@hotmail.com",
+    "city": "glenby",
+    "name": "Glen Johannes",
+    "telephone": "88888888"
+  }
+}

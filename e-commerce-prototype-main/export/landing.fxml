@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox>
+         <children>
+            <BorderPane id="landing" prefHeight="800" prefWidth="800">
+            <children>
+
+            </children>
+            </BorderPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

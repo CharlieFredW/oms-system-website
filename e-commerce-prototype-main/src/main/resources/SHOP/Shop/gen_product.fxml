@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="productBox" alignment="CENTER" prefHeight="200.0" prefWidth="175.0" spacing="20.0"
+      xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="SHOP.Shop.ProductController">
+   <ImageView fx:id="productImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true"
+              VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="5.0"/>
+      </VBox.margin>
+   </ImageView>
+   <Label fx:id="productTitle" text="Label"/>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <Label fx:id="productPrice" text="Label"/>
+      <Label fx:id="addToCartBtn" text="Label"/>
+   </HBox>
+</VBox>

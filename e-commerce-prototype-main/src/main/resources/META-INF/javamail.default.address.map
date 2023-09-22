@@ -1,0 +1,2 @@
+# DO NOT DELETE
+# this is a workaround for a warning in sending emails with jakarta.mail after adding fxml, resources and module-info.java

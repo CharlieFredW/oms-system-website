@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="OMS.UI.GUIFramework.OrderPageControllerCRUD">
+    <center>
+        <VBox prefHeight="400.0" prefWidth="440.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="40.0">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="460.0">
+                            <children>
+                                <HBox>
+                                    <children>
+                                        <Label text="Arne's Electronics">
+                                            <font>
+                                                <Font size="26.0"/>
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox prefWidth="200.0">
+                                    <children>
+                                        <Label text="Order Number"/>
+                                        <Label fx:id="orderNumberLabel" prefHeight="23.0" prefWidth="126.0"
+                                               text="999999">
+                                            <padding>
+                                                <Insets left="10.0"/>
+                                            </padding>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <HBox fx:id="printHBox">
+                                    <children>
+                                        <Label text="Total products:"/>
+                                        <Label fx:id="totalProductsLabel" text="0">
+                                            <HBox.margin>
+                                                <Insets left="10.0"/>
+                                            </HBox.margin>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox prefHeight="71.0" prefWidth="350.0">
+                            <children>
+                                <Button fx:id="Submit" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0"
+                                        prefWidth="62.0" text="Update">
+                                    <VBox.margin>
+                                        <Insets left="100.0" top="20.0"/>
+                                    </VBox.margin>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <TableView fx:id="productsTableView" editable="true" minHeight="370.0" prefHeight="540.0">
+                    <columns>
+                        <TableColumn fx:id="columnCID" prefWidth="75.0" text="Row ID"/>
+                        <TableColumn fx:id="productIdColumn" prefWidth="140.0" sortable="false" text="Product id"/>
+                        <TableColumn fx:id="quantityColumn" prefWidth="126.0" sortable="false" text="Quantity"/>
+                        <TableColumn fx:id="priceColumn" prefWidth="161.0" sortable="false" text="Price"/>
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                    </columnResizePolicy>
+                </TableView>
+                <HBox VBox.vgrow="ALWAYS">
+                    <VBox.margin>
+                        <Insets top="5.0"/>
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+    <left>
+        <VBox prefHeight="200.0" prefWidth="20.0" BorderPane.alignment="CENTER"/>
+    </left>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="20.0" BorderPane.alignment="CENTER"/>
+    </right>
+    <bottom>
+        <HBox prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="TextFieldColumnID" promptText="Row ID">
+                    <HBox.margin>
+                        <Insets left="20.0"/>
+                    </HBox.margin>
+                </TextField>
+                <TextField fx:id="TextFieldProductID" promptText="Product ID"/>
+                <TextField fx:id="TextFieldQuantity" promptText="Quantity"/>
+                <TextField fx:id="TextFieldPrice" promptText="Price">
+                    <HBox.margin>
+                        <Insets right="20.0"/>
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,33 @@
+{
+  "cart": {
+    "1": {
+      "amount": 1,
+      "price": 150,
+      "id": "1"
+    },
+    "2": {
+      "amount": 1,
+      "price": 150,
+      "id": "2"
+    },
+    "3": {
+      "amount": 11,
+      "price": 12999,
+      "id": "3"
+    },
+    "4": {
+      "amount": 11,
+      "price": 12999,
+      "id": "4"
+    }
+  },
+  "customer": {
+    "zip": "3829",
+    "country": "Denmark",
+    "address": "Millevej 21",
+    "mail": "millepeter23423456423423534@hotmail.com",
+    "city": "Milleby",
+    "name": "Mille Peter",
+    "telephone": "4637281"
+  }
+}

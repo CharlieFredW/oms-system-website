@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="OMS.UI.GUIFramework.StockUIController">
+    <children>
+        <TextField fx:id="productId" layoutX="406.0" layoutY="175.0" promptText="Enter Product ID"/>
+        <Text layoutX="435.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Product Stock"/>
+        <DatePicker fx:id="datePickerFrom" layoutX="44.0" layoutY="42.0" prefHeight="17.0" prefWidth="148.0"/>
+        <DatePicker fx:id="datePickerTo" layoutX="235.0" layoutY="42.0" prefHeight="17.0" prefWidth="148.0"/>
+        <Text layoutX="8.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From"/>
+        <Text layoutX="211.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To"/>
+        <TableView fx:id="stockTable" layoutX="52.0" layoutY="201.0" prefHeight="357.0" prefWidth="313.0">
+            <columns>
+            </columns>
+        </TableView>
+        <Text layoutX="14.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Arnes's Electronics - Stock Manager">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Text>
+        <Text layoutX="156.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Stock Report"/>
+        <Button fx:id="csvButton" layoutX="52.0" layoutY="134.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="84.0" text="Csv File"/>
+        <Button fx:id="fileButton" layoutX="281.0" layoutY="134.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="84.0" text="Txt File"/>
+        <TextField fx:id="fileCreated" layoutX="154.0" layoutY="134.0" prefHeight="26.0" prefWidth="110.0"/>
+        <Text layoutX="419.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Product Stock">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Text>
+        <TableView fx:id="productTable" layoutX="403.0" layoutY="358.0" prefHeight="200.0" prefWidth="166.0"/>
+        <Button fx:id="updateProduct" layoutX="457.0" layoutY="222.0" mnemonicParsing="false" text="Update"/>
+        <Text layoutX="448.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Stock"/>
+        <TextField fx:id="updateStockT" layoutX="408.0" layoutY="288.0" promptText="Enter New Stock Amount"/>
+        <Button fx:id="readProductID" layoutX="456.0" layoutY="134.0" mnemonicParsing="false" text="ReadID"/>
+    </children>
+</AnchorPane>

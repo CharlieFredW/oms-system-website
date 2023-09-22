@@ -1,0 +1,23 @@
+{
+  "cart": {
+    "1": {
+      "amount": 0,
+      "price": 0,
+      "id": "0"
+    },
+    "2": {
+      "amount": 0,
+      "price": 0,
+      "id": "0"
+    }
+  },
+  "customer": {
+    "zip": "0000",
+    "country": "BLANK",
+    "address": "BLANK PLACE",
+    "mail": "BLANK@hotmail.com",
+    "city": "BLANK",
+    "name": "BLANK",
+    "telephone": "00000000"
+  }
+}

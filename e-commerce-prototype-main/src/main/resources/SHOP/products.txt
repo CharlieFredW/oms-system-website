@@ -1,0 +1,15 @@
+P001;laptop;999.99;Dell XPS 13;13.3'' FHD Display, Intel Core i7, 16GB RAM, 512GB SSD;silver;ultrabook;src/main/resources/SHOP/Icons/product_dummy.jpg
+P002;laptop;699.99;HP Pavilion 15.6;15.6'' FHD Display, AMD Ryzen 5, 8GB RAM, 256GB SSD;black;multitasking;src/main/resources/SHOP/Icons/product_dummy.jpg
+P003;laptop;1299.99;MacBook Pro;13.3'' Retina Display, Apple M1, 8GB RAM, 512GB SSD;silver;creative;src/main/resources/SHOP/Icons/product_dummy.jpg
+P004;laptop;1499.99;Razer Blade 15;15.6'' FHD Display, Intel Core i7, 16GB RAM, 512GB SSD;black;gaming;src/main/resources/SHOP/Icons/product_dummy.jpg
+P005;laptop;599.99;Acer Aspire 5;15.6'' FHD Display, AMD Ryzen 3, 8GB RAM, 256GB SSD;silver;budget;src/main/resources/SHOP/Icons/product_dummy.jpg
+P006;desktop;899.99;HP Pavilion Desktop;AMD Ryzen 5, 8GB RAM, 256GB SSD;black;multitasking;src/main/resources/SHOP/Icons/product_dummy.jpg
+P007;desktop;1299.99;Dell XPS Desktop;Intel Core i7, 16GB RAM, 512GB SSD, NVIDIA GeForce GTX 1660;silver;creative;src/main/resources/SHOP/Icons/product_dummy.jpg
+P008;desktop;1599.99;Mac Mini;Apple M1, 8GB RAM, 512GB SSD;silver;ultra-compact;src/main/resources/SHOP/Icons/product_dummy.jpg
+P009;desktop;1799.99;MSI Trident 3;Intel Core i7, 16GB RAM, 1TB SSD, NVIDIA GeForce RTX 3060;black;gaming;src/main/resources/SHOP/Icons/product_dummy.jpg
+P010;desktop;599.99;Acer Aspire TC;Intel Core i3, 8GB RAM, 256GB SSD;black;budget;src/main/resources/SHOP/Icons/product_dummy.jpg
+P011;misc;299.99;Raspberry Pi 4 Model B;Quad-core ARM Cortex-A72, 4GB RAM;red;DIY;src/main/resources/SHOP/Icons/product_dummy.jpg
+P012;misc;399.99;Arduino Starter Kit;UNO R3 Board, LCD Screen, Servo Motor, Breadboard;blue;DIY;src/main/resources/SHOP/Icons/product_dummy.jpg
+P013;misc;79.99;Amazon Echo Dot;Smart Speaker with Alexa, Charcoal Fabric;black;smart-home;src/main/resources/SHOP/Icons/product_dummy.jpg
+P014;misc;199.99;GoPro HERO9 Black;5K Ultra HD Video, 20MP Photos, HyperSmooth 3.0;black;outdoor;src/main/resources/SHOP/Icons/product_dummy.jpg
+P015;misc;599.99;Oculus Quest 2;All-in-One VR Gaming Headset, 256GB;white;virtual-reality;src/main/resources/SHOP/Icons/product_dummy.jpg

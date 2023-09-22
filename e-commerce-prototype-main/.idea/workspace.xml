@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8f70b17-f47c-48fd-844d-6e27ac34c1b9" name="Changes" comment="json">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/BlogpostController.java" afterDir="false" />
+    </list>
+    <list default="true" id="b8f70b17-f47c-48fd-844d-6e27ac34c1b9" name="Changes" comment="Checkout">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21-03-2023_13_06_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21-03-2023_13_06__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21-03-2023_13_11_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21-03-2023_13_11__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21-03-2023_15_09_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21-03-2023_15_09__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-03-2023_08_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-03-2023_08_17__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Logic/BlogPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Logic/BlogPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Logic/CMSHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Logic/CMSHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Logic/DAMHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Logic/IcmsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Logic/IcmsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Logic/PIMHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/BlogPostsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/BlogPostsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ProductHelperPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ProductHelperPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ProductListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ProductListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShoppingCartDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShoppingCartDataController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShoppingCartFieldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Shop/ShoppingCartFieldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SHOP/Files/FileA.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SHOP/Files/FileA.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SHOP/Shop/blog_post.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SHOP/Shop/blog_post.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SHOP/Shop/blog_posts_overview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SHOP/Shop/blog_posts_overview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SHOP/Shop/landing_page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SHOP/Shop/landing_page.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SHOP/Shop/BlogPostsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SHOP/Shop/BlogPostsControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    <list default="true" id="b8f70b17-f47c-48fd-844d-6e27ac34c1b9" name="Changes" comment="Jar files replaced by Maven dependencys">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SHOP/Logic/LogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SHOP/Logic/LogicTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ShopPim" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NF3c3jC15jAfKReSOw7HTdKz5y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Public/SemesterProject2/e-commerce-prototype/bin/postgresql-42.6.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marcu/Desktop/Semesterprojekt/e-commerce-prototype/bin/postgresql-42.6.0.jar&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34827587&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\SemesterProject2\e-commerce-prototype\src\main\resources\SHOP\Shop" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="SHOP.Shop" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LogicTest">
+    <configuration name="LogicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SHOP.Logic.LogicTest" />
+      <module name="e-commerce-prototype" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SHOP.Logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SHOP.Shop.ShopApplication" />
+      <module name="e-commerce-prototype" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SHOP.Shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShoppingCart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SHOP.Logic.ShoppingCart" />
+      <module name="e-commerce-prototype" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SHOP.Logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ShopApplication" />
+        <item itemvalue="Application.ShoppingCart" />
+        <item itemvalue="Application.LogicTest" />
+        <item itemvalue="Application.ShopApplication" />
+        <item itemvalue="Application.ShoppingCart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8f70b17-f47c-48fd-844d-6e27ac34c1b9" name="Changes" comment="Added .gitignore" />
+      <created>1679246084035</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679246084035</updated>
+      <workItem from="1679246086578" duration="1369000" />
+      <workItem from="1679257582017" duration="2215000" />
+      <workItem from="1679328799704" duration="8567000" />
+      <workItem from="1679380522035" duration="1246000" />
+      <workItem from="1679382299930" duration="8059000" />
+      <workItem from="1679390944431" duration="16144000" />
+      <workItem from="1679933378106" duration="1770000" />
+      <workItem from="1679935171138" duration="6077000" />
+      <workItem from="1679982693073" duration="10737000" />
+      <workItem from="1680011190012" duration="1209000" />
+      <workItem from="1680018382826" duration="5296000" />
+      <workItem from="1680170576832" duration="574000" />
+      <workItem from="1680176916954" duration="13000" />
+      <workItem from="1680603455998" duration="3140000" />
+      <workItem from="1680610169659" duration="3064000" />
+      <workItem from="1680621034561" duration="648000" />
+      <workItem from="1680887238022" duration="44000" />
+      <workItem from="1681186662695" duration="2667000" />
+      <workItem from="1681191719611" duration="18020000" />
+      <workItem from="1681224332685" duration="1887000" />
+      <workItem from="1681241261432" duration="2255000" />
+      <workItem from="1681296453608" duration="2564000" />
+      <workItem from="1681370130546" duration="10000" />
+      <workItem from="1681643063565" duration="2233000" />
+      <workItem from="1681710341166" duration="798000" />
+      <workItem from="1681753521553" duration="114000" />
+      <workItem from="1681787859582" duration="14597000" />
+      <workItem from="1683097189877" duration="490000" />
+      <workItem from="1683109836769" duration="29000" />
+      <workItem from="1683119664465" duration="371000" />
+      <workItem from="1683131869321" duration="3039000" />
+      <workItem from="1683306969846" duration="4373000" />
+      <workItem from="1683610144524" duration="9281000" />
+      <workItem from="1683789152218" duration="12058000" />
+      <workItem from="1683801488088" duration="6512000" />
+      <workItem from="1683610144524" duration="11993000" />
+    </task>
+    <task id="LOCAL-00001" summary="Base for shop application">
+      <created>1679385008734</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679385008734</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added project structure for testing">
+      <created>1679386827041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386827041</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added PLP-pages">
+      <created>1679407734671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679407734671</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated UI to FlowPane&#10;Added UI-functionality for adding product to cart&#10;Added showCart() in UI from shopping_cart_icon">
+      <created>1679983588074</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679983588074</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changed ImageView to Label">
+      <created>1679984516706</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679984516706</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated ProductListController and ProductController&#10;Implemented PIM-Handler (Offline mode)">
+      <created>1680611424091</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680611424091</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created product page fxml&#10;Added logic for product page">
+      <created>1681195642612</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681195642612</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added order_page_infoo.fxml">
+      <created>1681196482670</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681196482670</updated>
+    </task>
+    <task id="LOCAL-00009" summary="json">
+      <created>1681787934019</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681787934019</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed shopping_cart">
+      <created>1683024236857</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683024236857</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Checkout">
+      <created>1683622198381</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683622198382</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00010" summary="Jar files replaced by Maven dependencys">
+      <created>1681816288222</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681816288222</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Base for shop application" />
+    <MESSAGE value="Added project structure for testing" />
+    <MESSAGE value="Added PLP-pages" />
+    <MESSAGE value="Updated UI to FlowPane&#10;Added UI-functionality for adding product to cart&#10;Added showCart() in UI from shopping_cart_icon" />
+    <MESSAGE value="Changed ImageView to Label" />
+    <MESSAGE value="Updated ProductListController and ProductController&#10;Implemented PIM-Handler (Offline mode)" />
+    <MESSAGE value="Created product page fxml&#10;Added logic for product page" />
+    <MESSAGE value="added order_page_infoo.fxml" />
+    <MESSAGE value="json" />
+    <MESSAGE value="Fixed shopping_cart" />
+    <MESSAGE value="Checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkout" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IPersistenceHandler_java$JavaFX.ic" NAME="JavaFX Coverage Results" MODIFIED="1681468362951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <MESSAGE value="Jar files replaced by Maven dependencys" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jar files replaced by Maven dependencys" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IPersistenceHandler_java$JavaFX.ic" NAME="JavaFX Coverage Results" MODIFIED="1681468362951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

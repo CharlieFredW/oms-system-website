@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SHOP.Shop.ShoppingCartFieldController">
+   <children>
+      <HBox style="-fx-background-color: #ffffff;" VBox.vgrow="ALWAYS">
+         <children>
+            <BorderPane style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+               <center>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" style="-fx-background-color: #ffffff;" BorderPane.alignment="TOP_CENTER">
+                     <content>
+                        <HBox fx:id="productBoxWrapper" style="-fx-background-color: #ffffff;">
+                           <children>
+                              <VBox fx:id="shoppingCartProducts" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="clearShoppingCartBtn" mnemonicParsing="false" style="-fx-background-color: #2D728F; -fx-background-radius: 10px; -fx-border-color: #72A9DF; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Clear Shopping Cart" textFill="WHITE" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="totalTextLabel" alignment="CENTER" text="Total (incl. VAT):" HBox.hgrow="ALWAYS" />
+                                    <Label fx:id="totalLabel" alignment="CENTER" text="Label" HBox.hgrow="ALWAYS" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="vatTextLabel" text="VAT:" />
+                                    <Label fx:id="vatLabel" text="Label" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="checkoutButton" mnemonicParsing="false" style="-fx-background-color: #2D728F; -fx-background-radius: 10px; -fx-border-color: #72A9DF; -fx-border-radius: 10px; -fx-border-width: 2px;" text="Go to checkout" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="5.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </bottom>
+               <top>
+                  <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #2D728F; -fx-background-radius: 10px;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Shopping Cart" textFill="WHITE">
+                           <font>
+                              <Font size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </top>
+            </BorderPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

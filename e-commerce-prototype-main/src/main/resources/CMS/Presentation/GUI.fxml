@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CMS.Logic.GUI_Controller">
+   <right>
+      <AnchorPane fx:id="propertiesMenu" prefHeight="200.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="75.0" layoutY="189.0" prefHeight="800.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label text="Properties">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox prefHeight="747.0" prefWidth="250.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="43.0" text="Name:">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="properties_name" prefWidth="150.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="43.0" text="Fx:id:">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="properties_fxid" prefWidth="150.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="43.0" text="Type:">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="properties_type" editable="false" prefHeight="25.0" prefWidth="150.0" style="-fx-font-weight: bold;" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="43.0" text="Color">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ColorPicker fx:id="properties_color" prefWidth="150.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefWidth="250.0">
+                           <children>
+                              <Label fx:id="textOrLinkLabel" maxHeight="0.0" prefHeight="17.0" prefWidth="43.0" text="Text:" visible="false">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <StackPane>
+                                 <children>
+                                    <TextField fx:id="properties_textContent" disable="true" prefWidth="150.0" visible="false" />
+                                    <ChoiceBox fx:id="properties_imageChoiceBox" prefWidth="150.0" visible="false" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <Pane>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="250.0" text="Dimensions:">
+                                 <padding>
+                                    <Insets top="15.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="44.0" text="Width:">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="properties_width" prefWidth="150.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="44.0" text="Height:">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="properties_height" prefWidth="150.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" />
+                           </padding>
+                        </HBox>
+                        <Pane>
+                           <children>
+                              <Label alignment="CENTER" prefHeight="17.0" prefWidth="250.0" text="Coordinates:" />
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="44.0" text="X:">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="properties_x" prefWidth="150.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="15.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="44.0" text="Y:">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="properties_y" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="properties_create" disable="true" mnemonicParsing="false" onAction="#onCreateComponentButtonClicked" prefWidth="100.0" text="Create">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="properties_apply" disable="true" mnemonicParsing="false" onAction="#onApplyComponentButtonClicked" prefWidth="100.0" text="Apply">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="properties_delete" disable="true" mnemonicParsing="false" onAction="#onDeleteComponentButtonClicked" prefWidth="100.0" text="Delete">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Label fx:id="properties_error_label" text="Er du dum?" textFill="RED" visible="false">
+                                 <font>
+                                    <Font name="System Italic" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </right>
+   <left>
+      <AnchorPane fx:id="componentsMenu" prefHeight="800.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="components" alignment="TOP_CENTER" layoutX="75.0" layoutY="134.0" prefHeight="800.0" prefWidth="250.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <TextField fx:id="components_searchbar">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="components_searchbar_button" mnemonicParsing="false" onAction="#deselectCurrentComponent" text="Search">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Separator minHeight="57.0" prefHeight="57.0" prefWidth="250.0" />
+                  <Button fx:id="components_containers_button" mnemonicParsing="false" onAction="#onContainersMenuButtonClicked" prefWidth="250.0" text="Containers" />
+                  <GridPane fx:id="components_containers" gridLinesVisible="true" maxHeight="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" visible="false">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <StackPane>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="Pane" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_image" accessibleText="imageContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-image: url(&quot;..\images\img-placeholder.png&quot;);">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <ImageView fitHeight="69.0" fitWidth="80.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/img-placeholder.png" />
+                                 </image>
+                              </ImageView>
+                              <Label mouseTransparent="true" text="Image" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_textblock" accessibleText="textContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label alignment="CENTER" mouseTransparent="true" prefHeight="49.0" prefWidth="86.0" style="-fx-border-color: black;" text="Textblock">
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_subscene" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <SubScene height="75.0" mouseTransparent="true" width="75.0">
+                                <root>
+                                  <Region />
+                                </root>
+                              </SubScene>
+                              <Label mouseTransparent="true" text="SubScene" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Button fx:id="components_controls_button" mnemonicParsing="false" onAction="#onControlsMenuButtonClicked" prefWidth="250.0" text="Controls" />
+                  <GridPane fx:id="components_controls" gridLinesVisible="true" maxHeight="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" visible="false">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <StackPane>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_button" accessibleText="textContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Button mnemonicParsing="false" mouseTransparent="true" text="Button" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_hyperlink" accessibleText="linkContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Hyperlink mouseTransparent="true" text="Hyperlink" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_textfield" accessibleText="textContent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <TextField alignment="CENTER" editable="false" mouseTransparent="true" prefHeight="25.0" prefWidth="72.0" text="Text Field" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane id="menu_item" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Button mnemonicParsing="false" onAction="#onMenuMenuButtonClicked" prefWidth="250.0" text="Menu" />
+                  <GridPane fx:id="components_menu" gridLinesVisible="true" maxHeight="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" visible="false">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <StackPane>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_subscene1113" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_subscene1112" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_subscene1111" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_subscene111" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Button mnemonicParsing="false" onAction="#onShapesMenuButtonClicked" prefWidth="250.0" text="Shapes" />
+                  <GridPane fx:id="components_shapes" gridLinesVisible="true" maxHeight="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgrey;" visible="false">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <StackPane>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_roundpane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 90;">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="Round Pane" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_roundpane11" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_textbox11" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </GridPane.margin>
+                           <children>
+                              <Pane fx:id="component_subscene11" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <cursor>
+                                    <Cursor fx:constant="OPEN_HAND" />
+                                 </cursor>
+                              </Pane>
+                              <Label mouseTransparent="true" text="#placeholder" />
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </StackPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Separator minHeight="57.0" prefHeight="57.0" prefWidth="250.0" />
+                  <Label text="Components:" />
+                  <ListView fx:id="components_listview" onMousePressed="#components_listviewHandler" prefHeight="388.0" prefWidth="240.0" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <StackPane fx:id="preview_background">
+         <children>
+            <AnchorPane fx:id="preview_window" maxHeight="0.0" maxWidth="0.0" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: white;" />
+         </children>
+      </StackPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="newFileMenuButton" mnemonicParsing="false" onAction="#onNewFileMenuButtonClicked" text="New..." />
+                  <MenuItem fx:id="saveFileMenuButton" mnemonicParsing="false" onAction="#onSaveMenuButtonClicked" text="Save" />
+                  <MenuItem fx:id="loadFileMenuButton" mnemonicParsing="false" onAction="#onLoadMenuButtonClicked" text="Load..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="settingsMenuButton" mnemonicParsing="false" onAction="#onSettingsMenuButtonClicked" text="Settings..." />
+                  <MenuItem fx:id="exportMenuButton" mnemonicParsing="false" onAction="#onExportMenuButtonClicked" text="Export" />
+              <MenuItem fx:id="closeFileMenuButton" mnemonicParsing="false" onAction="#onCloseFileMenuButtonClicked" text="Close File" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="exitMenuButton" mnemonicParsing="false" onAction="#onExitMenuButtonClicked" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

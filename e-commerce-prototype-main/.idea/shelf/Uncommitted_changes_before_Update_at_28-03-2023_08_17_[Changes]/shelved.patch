@@ -1,0 +1,39 @@
+Index: src/main/resources/SHOP/Shop/shoppingcart.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/SHOP/Shop/shoppingcart.fxml b/src/main/resources/SHOP/Shop/shoppingcart.fxml
+new file mode 100644
+--- /dev/null	(date 1679949015455)
++++ b/src/main/resources/SHOP/Shop/shoppingcart.fxml	(date 1679949015455)
+@@ -0,0 +1,29 @@
++<?xml version="1.0" encoding="UTF-8"?>
++
++<?import javafx.scene.control.ScrollPane?>
++<?import javafx.scene.control.TableColumn?>
++<?import javafx.scene.control.TableView?>
++<?import javafx.scene.layout.HBox?>
++<?import javafx.scene.layout.VBox?>
++
++<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
++   <children>
++      <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
++         <children>
++            <ScrollPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
++               <content>
++                  <TableView fx:id="table" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;">
++                    <columns>
++                      <TableColumn fx:id="picColumn" prefWidth="87.99996572732925" style="-fx-background-color: #FFFFFF;" />
++                      <TableColumn fx:id="titleColumn" prefWidth="136.0" style="-fx-background-color: #FFFFFF;" text="Title" />
++                        <TableColumn fx:id="descColumn" prefWidth="175.2000274658203" style="-fx-background-color: #FFFFFF;" text="Description" />
++                        <TableColumn fx:id="amountColumn" prefWidth="61.60003662109375" style="-fx-background-color: #FFFFFF;" text="Amount" />
++                        <TableColumn fx:id="priceColumn" prefWidth="128.00006103515625" style="-fx-background-color: #FFFFFF;" text="Price" />
++                    </columns>
++                  </TableView>
++               </content>
++            </ScrollPane>
++         </children>
++      </VBox>
++   </children>
++</HBox>

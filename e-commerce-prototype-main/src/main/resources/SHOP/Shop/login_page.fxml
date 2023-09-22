@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SHOP.Shop.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="CENTER" style="-fx-background-color: #2D728F; -fx-background-radius: 10px;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="textLabel" alignment="CENTER" text="TextLabel" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" VBox.vgrow="ALWAYS" />
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Button fx:id="newCustomerBtn" mnemonicParsing="false" style="-fx-background-color: #2D728F; -fx-background-radius: 7px;" text="New customer" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="existingCustomerBtn" mnemonicParsing="false" style="-fx-background-color: #2D728F; -fx-background-radius: 7px;" text="Existing customer" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="guestBtn" mnemonicParsing="false" style="-fx-background-color: #2D728F; -fx-background-radius: 7px;" text="Guest" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="40.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

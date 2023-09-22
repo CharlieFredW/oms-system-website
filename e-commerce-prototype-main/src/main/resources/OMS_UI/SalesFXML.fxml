@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="OMS.UI.GUIFramework.SalesUIController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="600.0">
+            <children>
+                <DatePicker fx:id="datePickerFrom" layoutX="93.0" layoutY="215.0" promptText="MM-DD-YY">
+                </DatePicker>
+                <TextField fx:id="orderId" alignment="CENTER" layoutX="220.0" layoutY="288.0"
+                           promptText="Enter Order ID"/>
+                <Button fx:id="buttonTxt" layoutX="106.0" layoutY="425.0" mnemonicParsing="false" prefHeight="26.0"
+                        prefWidth="114.0" text="Txt File"/>
+                <Button fx:id="buttonCsv" layoutX="380.0" layoutY="425.0" mnemonicParsing="false" prefHeight="26.0"
+                        prefWidth="114.0" text="Csv File"/>
+                <Text layoutX="239.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Generate Sales Report"/>
+                <DatePicker fx:id="datePickerTo" layoutX="328.0" layoutY="215.0" promptText="MM-DD-YY"/>
+                <TextArea fx:id="completedSalesReport" layoutX="236.0" layoutY="460.0" prefHeight="120.0"
+                          prefWidth="128.0"/>
+                <Text layoutX="114.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arnes Electronics"
+                      wrappingWidth="371.5">
+                    <font>
+                        <Font name="System Bold" size="50.0"/>
+                    </font>
+                </Text>
+                <Text layoutX="166.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accountant Page ">
+                    <font>
+                        <Font size="36.0"/>
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

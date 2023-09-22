@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SHOP.Shop.ShoppingCartDataController">
+   <children>
+      <ImageView fx:id="productImageView" fitHeight="150.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </ImageView>
+      <Label fx:id="productTitleLabel" text="PRODUCT TITLE">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="productDescriptionLabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="300.0" text="Product Description Product Description Product Description Product Description Product Description" wrapText="true" HBox.hgrow="ALWAYS">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="productPriceLabel" text="PRICE LABEL">
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="minusOneProductLabel" text="-">
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="productAmountLabel" text="1">
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="plusOneProductLabel" text="+">
+         <HBox.margin>
+            <Insets left="5.0" right="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="removeProductLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="12.0" prefWidth="12.0" style="-fx-background-color: #2D728F;" text="X" textAlignment="CENTER" textFill="WHITE">
+         <HBox.margin>
+            <Insets right="50.0" />
+         </HBox.margin>
+      </Label>
+   </children>
+</HBox>

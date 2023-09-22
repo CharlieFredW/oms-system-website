@@ -1,0 +1,33 @@
+{
+  "cart": {
+    "1": {
+      "amount": 1,
+      "price": 150,
+      "id": "1"
+    },
+    "2": {
+      "amount": 6,
+      "price": 250,
+      "id": "2"
+    },
+    "5": {
+      "amount": 7,
+      "price": 6000,
+      "id": "5"
+    },
+    "10": {
+      "amount": 11,
+      "price": 12999,
+      "id": "10"
+    }
+  },
+  "customer": {
+    "zip": "3000",
+    "country": "Denmark",
+    "address": "Vejvej 21",
+    "mail": "hejhejhejsa1234321@hotmail.com",
+    "city": "Helsingør",
+    "name": "Bent Bent",
+    "telephone": "12345678"
+  }
+}

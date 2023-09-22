@@ -1,0 +1,33 @@
+{
+  "cart": {
+    "1": {
+      "amount": 1,
+      "price": 1520,
+      "id": "1"
+    },
+    "2": {
+      "amount": 1,
+      "price": 10,
+      "id": "2"
+    },
+    "3": {
+      "amount": 11,
+      "price": 1299,
+      "id": "3"
+    },
+    "4": {
+      "amount": 11,
+      "price": 15999,
+      "id": "4"
+    }
+  },
+  "customer": {
+    "zip": "2000",
+    "country": "Denmark",
+    "address": "jenshansensbondegaardabc 2123",
+    "mail": "glenabcjohannes2604@hotmail.com",
+    "city": "glenby",
+    "name": "Glenabc Johannesabc",
+    "telephone": "88888888"
+  }
+}

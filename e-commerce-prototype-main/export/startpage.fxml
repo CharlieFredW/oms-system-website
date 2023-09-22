@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane id="startpage" prefHeight="800" prefWidth="800" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" >
+<children>
+<AnchorPane fx:id="topBar" prefHeight="100.0" prefWidth="800.0" layoutX="0.0" layoutY="12.0" >
+<children>
+<Pane fx:id="" prefHeight="100.0" prefWidth="800.0" layoutX="0.0" layoutY="0.0" style="-fx-background-color: #008080;" /><Pane fx:id="icon_profile" prefHeight="75.0" prefWidth="100.0" layoutX="620.0" layoutY="15.0" style="-fx-background-color: #0000ff; -fx-background-radius: 100.0;" /><Pane fx:id="circle_bag" prefHeight="75.0" prefWidth="100.0" layoutX="673.0" layoutY="14.0" style="-fx-background-color: #ffffff; -fx-background-radius: 100.0;" /><Pane fx:id="logo_ring" prefHeight="75.0" prefWidth="400.0" layoutX="200.0" layoutY="12.0" style="-fx-background-color: #00ffff; -fx-background-radius: 400.0;" /><Pane fx:id="logofill" prefHeight="69.0" prefWidth="394.0" layoutX="203.0" layoutY="15.0" style="-fx-background-color: #008080; -fx-background-radius: 394.0;" /><Label fx:id="logo" prefHeight="50.0" prefWidth="0.0" layoutX="216.0" layoutY="16.0" text="Arnes Electronics" /></children>
+</AnchorPane>
+<AnchorPane fx:id="product" prefHeight="200.0" prefWidth="150.0" layoutX="124.0" layoutY="228.0" >
+<children>
+<Pane fx:id="productImage" prefHeight="100.0" prefWidth="150.0" layoutX="0.0" layoutY="0.0" style="-fx-background-color: #e6e6e6;" /><Label fx:id="productName" prefHeight="15.0" prefWidth="0.0" layoutX="31.0" layoutY="108.0" text="productName" /><Label fx:id="productPrice" prefHeight="15.0" prefWidth="0.0" layoutX="58.0" layoutY="132.0" text="$$$" /><Button fx:id="add" prefHeight="30.0" prefWidth="75.0" layoutX="36.0" layoutY="155.0" mnemonicParsing="false" text="add" /></children>
+</AnchorPane>
+</children>
+</AnchorPane>

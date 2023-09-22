@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.*?>
+
+<TabPane fx:id="pimTabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PIM.presentation.PIMController">
+  <tabs>
+    <Tab text="Add product">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="Name" layoutX="225.0" layoutY="32.0" prefHeight="40.0" prefWidth="150.0" promptText="Name" wrapText="true" AnchorPane.topAnchor="30.0" />
+                  <TextArea fx:id="Description" layoutX="225.0" layoutY="90.0" prefHeight="40.0" prefWidth="150.0" promptText="Description" wrapText="true" AnchorPane.topAnchor="90.0" />
+                  <TextArea fx:id="Price" layoutX="225.0" layoutY="150.0" prefHeight="40.0" prefWidth="70.0" promptText="Price" wrapText="true" AnchorPane.topAnchor="150.0" />
+                  <TextArea fx:id="Quantity" layoutX="305.0" layoutY="150.0" prefHeight="40.0" prefWidth="70.0" promptText="Quantity" wrapText="true" AnchorPane.leftAnchor="305.0" />
+                  <ComboBox fx:id="Categories" layoutX="225.0" layoutY="260.0" prefHeight="30.0" prefWidth="150.0" AnchorPane.topAnchor="210.0" />
+                  <ComboBox fx:id="Colors" layoutX="225.0" layoutY="314.0" prefHeight="30.0" prefWidth="150.0" AnchorPane.topAnchor="260.0" />
+                  <CheckComboBox fx:id="Tags" layoutX="225.0" layoutY="260.0" prefHeight="30.0" prefWidth="150.0" AnchorPane.topAnchor="310.0" />
+                  <Button fx:id="Add" layoutX="305.0" layoutY="360.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Add" textAlignment="CENTER" AnchorPane.leftAnchor="305.0" AnchorPane.topAnchor="360.0" />
+                  <Button fx:id="Clear" layoutX="225.0" layoutY="354.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="30.0" prefWidth="70.0" text="Clear" textAlignment="CENTER" AnchorPane.topAnchor="360.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Search for product">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="Search" layoutX="89.0" layoutY="108.0" prefHeight="40.0" prefWidth="355.0" promptText="Search for a product" wrapText="true" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="108.0" />
+                  <ListView fx:id="list_Of_Products" layoutX="200.0" layoutY="164.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="155.0" />
+                  <ToggleButton fx:id="idToggleButton" layoutX="155.0" layoutY="45.0" mnemonicParsing="false" onAction="#clearList" prefHeight="30.0" prefWidth="90.0" text="ID" textAlignment="CENTER" wrapText="true">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="searchByToggle" />
+                     </toggleGroup></ToggleButton>
+                  <ToggleButton fx:id="nameToggleButton" layoutX="255.0" layoutY="45.0" mnemonicParsing="false" onAction="#clearList" prefHeight="30.0" prefWidth="90.0" selected="true" text="Name" textAlignment="CENTER" toggleGroup="$searchByToggle" wrapText="true" />
+                  <ToggleButton fx:id="tagToggleButton" layoutX="355.0" layoutY="45.0" mnemonicParsing="false" onAction="#clearList" prefHeight="30.0" prefWidth="90.0" text="Tag(s)" textAlignment="CENTER" toggleGroup="$searchByToggle" wrapText="true" AnchorPane.rightAnchor="155.0" />
+                   <Label layoutX="89.0" layoutY="45.0" prefHeight="31.0" prefWidth="58.0" text="Search by:" wrapText="true" AnchorPane.leftAnchor="89.0" />
+                   <Button fx:id="removeProductButton" layoutX="479.0" layoutY="285.0" mnemonicParsing="false" onAction="#removeProductHandler" prefHeight="30.0" prefWidth="70.0" text="Remove" textAlignment="CENTER" AnchorPane.leftAnchor="479.0" AnchorPane.topAnchor="285.0" />
+                   <Button fx:id="goToEditPageButton" layoutX="479.0" layoutY="334.0" mnemonicParsing="false" onAction="#retrieveInfoAndSendToEditPage" prefHeight="30.0" prefWidth="70.0" text="Edit" textAlignment="CENTER" AnchorPane.leftAnchor="479.0" AnchorPane.topAnchor="334.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Edit product">
+          <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                      <TextArea fx:id="editNameField" layoutX="214.0" layoutY="105.0" prefHeight="40.0" prefWidth="151.0" wrapText="true" AnchorPane.topAnchor="105.0" />
+                      <TextArea fx:id="editDescriptionField" layoutX="215.0" layoutY="174.0" prefHeight="40.0" prefWidth="150.0" wrapText="true" AnchorPane.topAnchor="174.0" />
+                      <TextArea fx:id="editPriceField" layoutX="214.0" layoutY="238.0" prefHeight="40.0" prefWidth="70.0" wrapText="true" AnchorPane.topAnchor="238.0" />
+                      <Label layoutX="216.0" layoutY="88.0" prefHeight="17.0" prefWidth="54.0" text="Name:" textFill="#c7bebe" />
+                      <Label layoutX="211.0" layoutY="33.0" prefHeight="17.0" prefWidth="63.0" text="Product ID:" />
+                      <Label fx:id="productIdLabel" layoutX="284.0" layoutY="33.0" prefHeight="17.0" prefWidth="230.0" />
+                      <Label layoutX="215.0" layoutY="157.0" prefHeight="17.0" prefWidth="85.0" text="Description:" textFill="#c7bebe" />
+                      <Label layoutX="215.0" layoutY="220.0" prefHeight="17.0" prefWidth="55.0" text="Price:" textFill="#c7bebe" />
+                      <Label layoutX="294.0" layoutY="220.0" prefHeight="17.0" prefWidth="70.0" text="Quantity:" textFill="#c7bebe" />
+                      <Label layoutX="216.0" layoutY="285.0" prefHeight="19.0" prefWidth="53.0" text="Colors:" textFill="#c7bebe" />
+                      <Label layoutX="217.0" layoutY="350.0" prefHeight="21.0" prefWidth="81.0" text="Categories:" textFill="#c7bebe" />
+                      <Label layoutX="216.0" layoutY="419.0" prefHeight="17.0" prefWidth="33.0" text="Tags:" textFill="#c7bebe" />
+                      <TextArea fx:id="editQuantityField" layoutX="294.0" layoutY="238.0" prefHeight="40.0" prefWidth="70.0" wrapText="true" AnchorPane.leftAnchor="294.0" />
+                      <Button fx:id="goToSearchForProductButton" layoutX="34.0" layoutY="33.0" mnemonicParsing="false" onAction="#goFromEditToSearchTab" prefHeight="80.0" prefWidth="121.0" text="Search for product" textAlignment="CENTER" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="33.0" />
+                      <Button fx:id="updateProductButton" layoutX="219.0" layoutY="498.0" mnemonicParsing="false" onAction="#updateProductButtonHandler" prefHeight="29.0" prefWidth="150.0" text="Update product details" textAlignment="CENTER" AnchorPane.leftAnchor="219.0" AnchorPane.topAnchor="498.0" />
+                      <ComboBox fx:id="editCategoriesBox" layoutX="217.0" layoutY="371.0" prefHeight="30.0" prefWidth="150.0" AnchorPane.topAnchor="371.0" />
+                      <ComboBox fx:id="editColorsBox" layoutX="215.0" layoutY="304.0" prefHeight="30.0" prefWidth="150.0" AnchorPane.topAnchor="304.0" />
+                      <CheckComboBox fx:id="editTagsBox" layoutX="217.0" layoutY="437.0" prefHeight="30.0" prefWidth="150.0" AnchorPane.topAnchor="437.0" />
+                  </children></AnchorPane>
+          </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,50 @@
+[
+  {
+    "post": {
+      "id": "1",
+      "title": "How to A",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ",
+      "image": "src/main/resources/SHOP/Icons/product_dummy.jpg"
+    }
+  },
+  {
+    "post": {
+      "id": "2",
+      "title": "How to B",
+      "body": "Urna molestie at elementum eu facilisis. Amet consectetur adipiscing elit ut aliquam purus sit amet. Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Neque viverra justo nec ultrices dui sapien eget mi proin. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Cursus euismod quis viverra nibh cras. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nisl nunc mi ipsum faucibus vitae. Habitant morbi tristique senectus et netus et. Rhoncus est pellentesque elit ullamcorper.",
+      "image": "src/main/resources/SHOP/Icons/product_dummy.jpg"
+    }
+  },
+  {
+    "post": {
+      "id": "3",
+      "title": "How to C",
+      "body": " Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nisl nunc mi ipsum faucibus vitae. Habitant morbi tristique senectus et netus et. Rhoncus est pellentesque elit ullamcorper.",
+      "image": "src/main/resources/SHOP/Icons/product_dummy.jpg"
+    }
+  },
+  {
+    "post": {
+      "id": "4",
+      "title": "How to D",
+      "body": " Gravida rutrum quisque non tellus orci ac auctor augue mauris. Cursus euismod quis viverra nibh cras. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nisl nunc mi ipsum faucibus vitae. Habitant morbi tristique senectus et netus et. Rhoncus est pellentesque elit ullamcorper.",
+      "image": "src/main/resources/SHOP/Icons/product_dummy.jpg"
+    }
+  },
+  {
+    "post": {
+      "id": "5",
+      "title": "How to E",
+      "body": "Augue neque gravida in fermentum et sollicitudin ac orci phasellus. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Neque viverra justo nec ultrices dui sapien eget mi proin. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Cursus euismod quis viverra nibh cras. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nisl nunc mi ipsum faucibus vitae. Habitant morbi tristique senectus et netus et. Rhoncus est pellentesque elit ullamcorper.",
+      "image": "src/main/resources/SHOP/Icons/product_dummy.jpg"
+    }
+  },
+  {
+    "post": {
+      "id": "6",
+      "title": "How to F",
+      "body": "Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Neque viverra justo nec ultrices dui sapien eget mi proin. Gravida rutrum quisque non tellus orci ac auctor augue mauris. Cursus euismod quis viverra nibh cras. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus. Nisl nunc mi ipsum faucibus vitae. Habitant morbi tristique senectus et netus et. Rhoncus est pellentesque elit ullamcorper.",
+      "image": "src/main/resources/SHOP/Icons/product_dummy.jpg"
+    }
+  }
+]

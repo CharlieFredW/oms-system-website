@@ -1,0 +1,33 @@
+{
+  "cart": {
+    "2": {
+      "amount": 1,
+      "price": 7000,
+      "id": "2"
+    },
+    "3": {
+      "amount": 3,
+      "price": 7000,
+      "id": "3"
+    },
+    "5": {
+      "amount": 2,
+      "price": 12999,
+      "id": "5"
+    },
+    "7": {
+      "amount": 1,
+      "price": 1200,
+      "id": "7"
+    }
+  },
+  "customer": {
+    "zip": "3829",
+    "country": "Denmark",
+    "address": "Millevej 21",
+    "mail": "bruh123lol@hotmail.com",
+    "city": "Milleby",
+    "name": "bruhbruh bruhman",
+    "telephone": "4637281"
+  }
+}
